@@ -1,0 +1,100 @@
+/* Container for the whole sign-up page */
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* White background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333; /* Dark text for contrast */
+}
+
+/* Main container for the sign-up form */
+.signup-form-container {
+  background-color: #f9fafb; /* Light gray background for form */
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 28rem; /* Slightly wider form */
+  max-width: 90%; /* Responsive design */
+}
+
+/* Headings */
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1f2937; /* Deep Gray */
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #e5e7eb; /* Light Gray border */
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  color: #1f2937; /* Text color */
+  background-color: #ffffff; /* White background for inputs */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #3b82f6; /* Focus Blue */
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); /* Blue Glow */
+  outline: none;
+}
+
+/* Submit button */
+input[type="submit"] {
+  background-color: #10b981; /* Teal Green */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: #059669; /* Darker Green */
+  transform: scale(1.02); /* Subtle scaling effect */
+}
+
+/* Link */
+a {
+  color: #3b82f6;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #2563eb; /* Darker Blue */
+  text-decoration: underline;
+}
+
+/* Text */
+p {
+  font-size: 1rem;
+  color: #6b7280; /* Medium Gray */
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-form-container {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,71 @@
+/* Container for the whole dashboard page */
+.dashboard-container {
+  min-height: 100vh;
+  display: flex;
+  background: #f7fafc; /* Slightly lighter gray background for a soft look */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+  background: #d87229; /* Lighter blue background */
+  color: white;
+  padding: 20px;
+  width: 220px; /* Increased width for better space */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1); /* Shadow for subtle separation */
+}
+
+.sidebar h1 {
+  font-size: 1.75rem; /* Slightly larger font size */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px; /* Increased margin for better spacing */
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #6A8CFF; /* Softer hover effect */
+  color: #ffffff;
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: #ffffff; /* White background for main content */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the main content */
+  overflow-y: auto; /* Prevents overflow and adds scroll if necessary */
+}
+
+.main-content h2 {
+  font-size: 2rem;
+  color: #2D3748; /* Darker gray for headings */
+  margin-bottom: 20px;
+}
+
+.main-content p {
+  font-size: 1rem;
+  color: #4A5568; /* Light gray for text */
+  line-height: 1.5;
+}

@@ -1,0 +1,131 @@
+/* Container for the whole login page */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333; /* Dark text */
+}
+
+/* Left Side: Description */
+.left-side {
+  flex: 1;
+  background: #f9fafb; /* Light gray for consistency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.left-side h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1f2937; /* Deep gray */
+}
+
+/* Right Side: Login Form */
+.right-side {
+  flex: 1;
+  background-color: #ffffff; /* White background for the form section */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.login-form-container {
+  background-color: #f3f4f6; /* Subtle light gray */
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 28rem; /* Slightly wider form */
+  max-width: 90%; /* Responsive for smaller screens */
+}
+
+.login-form-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1f2937; /* Deep gray */
+}
+
+.login-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; /* Increased spacing for cleaner layout */
+}
+
+.login-form-container input[type="email"],
+.login-form-container input[type="password"],
+.login-form-container button {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb; /* Light gray border */
+  font-size: 1rem;
+  color: #1f2937; /* Dark text */
+  background-color: #ffffff; /* White input fields */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-form-container input[type="email"]:focus,
+.login-form-container input[type="password"]:focus {
+  border-color: #3b82f6; /* Blue focus */
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); /* Blue glow */
+  outline: none;
+}
+
+.login-form-container button {
+  background-color: #10b981; /* Teal Green */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.login-form-container button:hover {
+  background-color: #059669; /* Darker Green */
+  transform: scale(1.02); /* Subtle scaling */
+}
+
+.login-form-container a {
+  color: #3b82f6; /* Blue */
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.3s;
+}
+
+.login-form-container a:hover {
+  color: #2563eb; /* Darker Blue */
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .left-side {
+    order: 2;
+    padding: 1.5rem;
+  }
+
+  .right-side {
+    order: 1;
+    padding: 1.5rem;
+  }
+
+  .login-form-container {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .left-side h1 {
+    font-size: 2rem;
+  }
+}
