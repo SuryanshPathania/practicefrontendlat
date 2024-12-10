@@ -186,3 +186,16 @@ const ListPage = () => {
 };
 
 export default ListPage; // Export ListPage component as default
+
+
+// //The ListPage.js component is a user interface I developed to manage and interact with saved HTTP status code lists. It allows users to view their saved lists, see details such as the creation date, and manage the data dynamically.
+
+// To manage the component's state, I utilized React’s useState hook for storing and updating data like the list of saved lists and the currently selected list. The useEffect hook is employed to fetch the saved lists from the server when the component first renders. This ensures the data displayed is always up-to-date with the server.
+
+// For API calls, I integrated axios to handle communication with the backend. This includes fetching saved lists, deleting an entire list, or updating a list by removing specific HTTP status codes. Each of these actions is designed with robust error handling to provide a smooth user experience, even in cases of server errors or connectivity issues.
+
+// The component has an intuitive interface where users can:
+
+// View Saved Lists: Lists are displayed with their creation date for easy identification.
+// Display HTTP Status Code Images: Upon selecting a list, users can view images corresponding to the HTTP status codes. If an image fails to load, a fallback mechanism ensures a placeholder image is displayed.
+// Manage Data: Users can delete an entire list or remove specific codes from a list. These actions immediately update the UI and the server to keep everything synchronized.

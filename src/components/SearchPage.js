@@ -223,3 +223,5 @@ const SearchPage = ({ savedList, setSavedList }) => {
 };
 
 export default SearchPage;
+
+//The SearchPage.js component is something I developed to provide an intuitive way to filter, display, and manage HTTP status codes. I used React’s useState to manage the local states like the user’s filter input and temporary list, while useEffect is implemented to fetch saved lists from an API when the component loads. I created functionality where users can input a filter, and the app dynamically matches it to a predefined list of common HTTP status codes using regex. The filtered results are displayed visually with corresponding dog-themed images fetched from an external source. I also implemented features to let users add filtered codes to a temporary list, save the list to the server via an API (using axios), or clear it entirely. I designed the app to handle errors gracefully, such as falling back to placeholder images when an image fails to load. Additionally, I integrated TempListContext to share the temporary list data across components
